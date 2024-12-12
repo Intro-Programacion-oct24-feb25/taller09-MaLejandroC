@@ -20,6 +20,7 @@ public class Ejercicio02 {
             -1, 100, 200, 2, 21, 22, 27};
         String[] rangos = {"1-5", "6-10", "11-15", "16-20"};
         int[] valoresRangos = new int[4]; // {0, 0, 0, 0, 0}
+        int valores_fuera_de_rango = 0;
         int respuesta;
 
         for (int i = 0; i < respuestas.length; i++) {
@@ -35,6 +36,8 @@ public class Ejercicio02 {
                     } else {
                         if ((respuesta >= 16) && (respuesta <= 20)) {
                             valoresRangos[3] = valoresRangos[3] + 1;
+                        } else {
+                            valores_fuera_de_rango = valores_fuera_de_rango + 1;
                         }
 
                     }
@@ -47,7 +50,8 @@ public class Ejercicio02 {
             System.out.printf("Rango %s - valor %d\n", rangos[i],
                     valoresRangos[i]);
         }
-
+        
+        System.out.printf("Fuera-de-rango: %d\n",valores_fuera_de_rango);
     }
 
 }
