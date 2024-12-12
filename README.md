@@ -1,4 +1,11 @@
 # Taller 9 (Laboratorio)
+
+Integrantes: 
+- CARRION INGA MICHAEL ALEJANDRO
+- ESPINOSA GRANDA DIEGO ESTUARDO
+- OJEADA JARAMILLO ANTONIO JOSE
+- FLORES RODRIGUES DALTON SMIT
+  
 ## Construcción de programas usando arreglos unidimensionales
 
 Revisar los ejercicios propuestos en el proyecto de Netbeans denominado: **EjerciciosT9**
