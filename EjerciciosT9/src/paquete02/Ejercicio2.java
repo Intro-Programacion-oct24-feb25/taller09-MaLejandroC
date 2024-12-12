@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package paquete01;
+package paquete02;
 
 import java.util.Scanner;
 
@@ -10,13 +10,15 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejercicio {
+public class Ejercicio2 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int limite;
-        int i = 0;
+        
         String cadena = "";
+        int fuera_de_rango = 0;
+        //String fuera_de_rango = "fuera-de-rango";
         System.out.println("Ingrese un numero de elementos a almacenar: ");
         limite = entrada.nextInt();
         
@@ -24,7 +26,7 @@ public class Ejercicio {
         
         String[] nombresM = new String[limite];
 
-        while (i < nombresM.length)   {
+        for (int i = 0; i < nombresM.length; i++) {
             System.out.println("Ingrese el nombre de la marca: ");
             String nombre = entrada.nextLine();
             
@@ -39,12 +41,17 @@ public class Ejercicio {
                         cadena,
                         nombresM[i]);
                 
-                i = i + 1;
+               
+            } else {
+                fuera_de_rango = fuera_de_rango + 1;
             }
                
         }
         
-        System.out.printf("Las marcas de los vehiculos son: \n%s", cadena);
+        System.out.printf("Las marcas de los vehiculos son: \n%s\n"
+                + "Fuera-de-rango: %d\n",
+                cadena, 
+                fuera_de_rango);
 
     }
 
