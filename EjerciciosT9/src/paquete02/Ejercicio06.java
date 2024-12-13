@@ -31,23 +31,30 @@ public class Ejercicio06 {
         do {
             System.out.println("Menú:");
             for (int j = 0; j < arreglo.length; j++) {
-                System.out.printf("%d - %s <-- $%.2f\n", j, arreglo[j], precios[j]);
+                System.out.printf("%d - %s <-- $%.2f\n", j, arreglo[j], 
+                        precios[j]);
             }
             System.out.println("Que desea comprar (Ingrese el número): ");
             i = entrada.nextInt();
                         
-            System.out.printf("Ingrese el numero de tazas a consumir de %s: ", arreglo[i]);
+            System.out.printf("Ingrese el numero de tazas a consumir de %s: ", 
+                    arreglo[i]);
             int cantidad = entrada.nextInt();
             
             double valor = precios[i] * cantidad;
             
             total = total + valor;
             
-            cadena = String.format("%s%s(%dt),valor a cancelar $%.1f\n",cadena,arreglo[i],cantidad,valor);
+            cadena = String.format("%s%s(%dt),valor a cancelar $%.1f\n",
+                    cadena,
+                    arreglo[i],
+                    cantidad,
+                    valor);
             
             entrada.nextLine();
 
-            System.out.print("Ingrese \"c\" si desea continuar ingresando productos: ");
+            System.out.print("Ingrese \"c\" si desea continuar ingresando "
+                    + "productos: ");
             continuar = entrada.nextLine();
             
             

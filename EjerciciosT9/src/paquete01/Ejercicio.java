@@ -32,7 +32,8 @@ public class Ejercicio {
             
             inicial = inicial.toUpperCase();
             
-            if (!inicial.equals("A") && !inicial.equals("C") && !inicial.equals("T")) {
+            if (!inicial.equals("A") && !inicial.equals("C") && 
+                    !inicial.equals("T")) {
                 nombresM[i] = nombre;
                 
                 cadena = String.format("%sla marca de vehiculo: %s\n",

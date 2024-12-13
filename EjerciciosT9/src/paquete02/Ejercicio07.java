@@ -36,7 +36,10 @@ public class Ejercicio07 {
         
         for (int i= 0; i < numeros.length; i++) {
             double diferencia = promedio-numeros[i];
-            System.out.printf("%.2f - %d --> %.2f\n",promedio,numeros[i],diferencia);
+            System.out.printf("%.2f - %d --> %.2f\n",
+                    promedio,
+                    numeros[i],
+                    diferencia);
         }
 
     }

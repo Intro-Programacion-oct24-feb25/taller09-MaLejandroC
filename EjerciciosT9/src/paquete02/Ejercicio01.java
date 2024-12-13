@@ -19,7 +19,7 @@ public class Ejercicio01 {
         String[] rangos =       {"1-5", "6-10", "11-15", "16-20"};
         int[] valoresRangos =   {10,      20,     3,        1}    
         */
-        int[] respuestas = {1, 10, 11, 12, 12, 13, 16, 17, 18, 8, 9, 10, 19, 20};
+        int[] respuestas ={1, 10, 11, 12, 12, 13, 16, 17, 18, 8, 9, 10, 19, 20};
         String[] rangos = {"1-5", "6-10", "11-15", "16-20"};
         int[] valoresRangos = new int[4]; // {0, 0, 0, 0}
         int respuesta;
